@@ -23,7 +23,6 @@ public class screenshot_practice {
         driver.get("https://www.amazon.com");
 
         TakesScreenshot ts = (TakesScreenshot) driver;
-
         File screenshot = ts.getScreenshotAs(OutputType.FILE);
 
         File dir = new File("src/main/java/TakesScreenShot_Interface/screenshots");

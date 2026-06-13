@@ -8,6 +8,35 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //tag class --> tag.classname
 //tag attribute --> tag[attribute = "value"]
 //tag class attribute --> tag.classname[attribute ="value"]
+/*
+// By ID
+driver.findElement(By.cssSelector("input#email")).sendKeys("Manoj2316@gmail.com");
+
+// By Class
+driver.findElement(By.cssSelector("button.login")).click();
+
+// By Attribute
+driver.findElement(By.cssSelector("input[name='pass']")).sendKeys("Manoj2316@");
+
+// By Multiple Attributes
+driver.findElement(By.cssSelector("input[type='text'][name='username']")).sendKeys("Manoj");
+
+// Starts With
+driver.findElement(By.cssSelector("input[id^='user']")).sendKeys("Test");
+
+// Ends With
+driver.findElement(By.cssSelector("input[id$='name']")).sendKeys("Test");
+
+// Contains
+driver.findElement(By.cssSelector("input[id*='login']")).sendKeys("Test");
+
+// Parent > Child
+driver.findElement(By.cssSelector("div.login > input#email")).sendKeys("Test");
+
+// nth-child
+driver.findElement(By.cssSelector("ul li:nth-child(2)")).click();
+
+ */
 
 public class cssSelector {
     public static void main(String[] args) throws  Exception {
