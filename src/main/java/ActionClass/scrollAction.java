@@ -4,13 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeListener;
+
 
 public class scrollAction {
 
@@ -36,7 +32,7 @@ public class scrollAction {
         Thread.sleep(2000);
 
         WebElement price = driver.findElement(By.xpath("(//span[@class='price actual-price'])[2]"));
-        action.click(price).clickAndHold(price).doubleClick(price).perform();
+        action.click(price).doubleClick(price).perform();
 
         Thread.sleep(3000);
 

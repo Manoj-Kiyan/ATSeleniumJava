@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -19,8 +20,10 @@ public class mouse_hover_action {
         Thread.sleep(3000);
 
         List<WebElement> Passsuggestions = driver.findElements(By.xpath("//li[@class='text-sm list-disc ml-5 p-1']"));
+        Actions action = new Actions(driver);
+        WebElement info = driver.findElement(By.xpath("//img[contains(@class,'w-5')]"));
 
-        driver.findElement(By.xpath("//img[contains(@class,'w-5')]")).click();
+        action.scrollToElement(info).moveToElement(info).perform();
         int i = 0;
         for(WebElement element:Passsuggestions){
 
