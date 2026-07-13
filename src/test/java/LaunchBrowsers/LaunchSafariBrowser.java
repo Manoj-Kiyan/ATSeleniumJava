@@ -1,4 +1,4 @@
-package org.example.LaunchBrowsers;
+package LaunchBrowsers;
 
 public class LaunchSafariBrowser {
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+    <test name="AllTests">
+        <parameter name="Url" value="https://demowebshop.tricentis.com/"></parameter>
+        <parameter name="FirstName" value="Manoj"></parameter>
+        <parameter name="LastName" value="Kiyan"></parameter>
+        <parameter name="Email" value="mk@gmail.com"></parameter>
+        <parameter name="Password" value="mk2316@"></parameter>
+        <parameter name="ConfirmPassword" value="mk2316@"></parameter>
+        <classes>
+            <class name="TestNG.DataDrivenTestingFromXmlFile"/>
+        </classes>
+    </test>
+</suite>

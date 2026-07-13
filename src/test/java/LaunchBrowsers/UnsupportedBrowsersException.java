@@ -1,4 +1,4 @@
-package org.example.LaunchBrowsers;
+package LaunchBrowsers;
 
 // Custom exception for unsupported browsers
 public class UnsupportedBrowsersException extends RuntimeException {

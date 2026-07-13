@@ -1,4 +1,4 @@
-package org.example.LaunchBrowsers;
+package LaunchBrowsers;
 
 // Custom exception for OS/browser mismatch
 public class BrowserMismatchException extends RuntimeException {

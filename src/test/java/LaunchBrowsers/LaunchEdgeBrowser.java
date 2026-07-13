@@ -1,4 +1,4 @@
-package org.example.LaunchBrowsers;
+package LaunchBrowsers;
 
 import org.openqa.selenium.edge.EdgeDriver;
 

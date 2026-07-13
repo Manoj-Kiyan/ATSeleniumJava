@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 
@@ -18,10 +19,11 @@ public class AmazonTask {
         driver.manage().window().maximize();
 
         driver.get("https://www.amazon.in/");
+        Thread.sleep(3000);
 
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("mobile", Keys.ENTER);
 
-        Thread.sleep(3000);
+
 
         String parentWindow = driver.getWindowHandle();
 
