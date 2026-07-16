@@ -25,7 +25,7 @@ public class Soft_Assert_Practice {
         String Email = File_Utility.getSingleData("Registration",1,3);
         String Password = File_Utility.getSingleData("Registration",1,4);
 
-        ast.assertEquals(driver.getTitle(),"Demo Web Shop","Welcome Page Not Displayed");
+        ast.assertEquals(driver.getTitle(),"mo0000 Web Shop","Welcome Page Not Displayed");
             //if(driver.getTitle().equals("Demo Web Shop")){
             System.out.println("Welcome Page Displayed Successfully");
 
