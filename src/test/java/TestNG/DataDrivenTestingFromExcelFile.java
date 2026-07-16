@@ -21,8 +21,8 @@ public class DataDrivenTestingFromExcelFile  {
         FileInputStream file = new FileInputStream("./src/test/resources/testScriptData.xlsx");
 
         //Open the workbook in read mode:
-        Workbook sheets = WorkbookFactory.create(file);
-        Sheet sheet = sheets.getSheet("Registration");
+        Workbook book = WorkbookFactory.create(file);
+        Sheet sheet = book.getSheet("Registration");
 
         Row row = sheet.getRow(1);
 

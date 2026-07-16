@@ -9,6 +9,7 @@
         <parameter name="ConfirmPassword" value="mk2316@"></parameter>
         <classes>
             <class name="TestNG.DataDrivenTestingFromXmlFile"/>
+
         </classes>
     </test>
 </suite>
