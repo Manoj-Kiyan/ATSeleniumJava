@@ -15,7 +15,6 @@ public class cartTest extends BaseClass {
         driver.findElement(By.id("add-to-cart-button-31")).click();
         Thread.sleep(2000);
         Reporter.log("PRODUCT ADDED TO CART SUCCESSFULLY . . .",true);
-
     }
 
     @Test(priority = 2)
