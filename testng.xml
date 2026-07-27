@@ -12,4 +12,6 @@
 
         </classes>
     </test>
+    <test name="BatchExecution">
+    </test>
 </suite>

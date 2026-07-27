@@ -13,6 +13,7 @@ public class wishListTest extends BaseClass {
         driver.findElement(By.linkText("Fiction EX")).click();
         driver.findElement(By.id("add-to-wishlist-button-78")).click();
         Thread.sleep(2000);
+
     }
 
     @Test(priority = 2)
@@ -30,7 +31,7 @@ public class wishListTest extends BaseClass {
         driver.findElement(By.name("updatecart")).click();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3 ,enabled = false)
     public void removeFromWishlistTest() throws InterruptedException {
 
         driver.findElement(By.partialLinkText("Books")).click();

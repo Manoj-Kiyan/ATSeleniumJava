@@ -15,7 +15,7 @@ public class xPath {
         Thread.sleep(2000);
 
 
-        //Relative xPath :
+        //Absolute xPath :
         driver.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/div/form/div[1]/input")).sendKeys("8148002316");
         //driver.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/div/form/div[3]/button")).click();
 
@@ -38,7 +38,7 @@ public class xPath {
 //
 //        xpath
 ////input[contains(@class,'email')]
-        //Abssolute xPath :
+        //Absolute xPath :
         driver.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/div/form/div[1]/input")).sendKeys("8248992657");
         driver.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/div/form/div[3]/button")).click();
     }

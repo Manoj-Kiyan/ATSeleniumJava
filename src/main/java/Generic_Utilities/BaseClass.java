@@ -4,23 +4,36 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.testng.Reporter;
+import org.testng.annotations.*;
 
 import java.util.List;
 
 public class BaseClass {
     public WebDriver driver;
 
-    @BeforeClass
-    public void openBrowser() throws Exception {
-        driver = new ChromeDriver();
+    @Parameters("browser")
+    @BeforeClass(alwaysRun = true)
+    public void openBrowser(String browser) throws Exception {
+        if(browser.equals("Chrome")){
+            driver = new ChromeDriver();
+        } else if (browser.equals("MsEdge")) {
+            driver = new EdgeDriver();
+        } else if (browser.equals("FireFox")) {
+            driver = new FirefoxDriver();
+        }else {
+            System.out.println("No Other Browser there . . .");
+        }
+
         driver.manage().window().maximize();
         driver.get(File_Utility.getProperty("url"));
+
+        Reporter.log("BROWSER OPENED SUCCESSFULLY . . .",true);
     }
-    @BeforeMethod
+    @BeforeMethod(groups = {"Smoke","Functional"})
     public void setupAndLogin() throws Exception {
 
         String email = File_Utility.getSingleData("Registration", 1, 3);
@@ -35,9 +48,10 @@ public class BaseClass {
             System.out.println("User not found. Registering new user...");
             register();
         }
+        Reporter.log("LOGIN SUCCESSFULLY . . .",true);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void logoutWebShop() throws InterruptedException {
         Thread.sleep(2000);
 
@@ -45,13 +59,15 @@ public class BaseClass {
         if (logoutLink.size() > 0) {
             logoutLink.get(0).click();
         }
+        Reporter.log("LOGOUT SUCCESSFULLY . . .",true);
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void closeBrowser(){
         if (driver != null) {
             driver.quit();
         }
+        Reporter.log("BROWSER CLOSED SUCCESSFULLY . . .",true);
     }
 
 

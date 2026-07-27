@@ -18,7 +18,7 @@ public class ScreenShot_Webpage {
 
         driver.get("https://www.zomato.com/");
 //6380476257
-        // Call getScreenShot() --> Child --> DownCast
+            //        Call getScreenShot() --> Child --> DownCast
             //        RemoteWebDriver rwd = (RemoteWebDriver) driver;
             //        rwd.getScreenshotAs();
             //           OR

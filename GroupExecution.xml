@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite2" parallel="classes">
+    <test thread-count="5" name="Tests">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+                <include name="Functional"></include>
+            </run>
+        </groups>
+        <classes>
+<!--            <class name="TestScripts.cartTest"/>-->
+            <class name="TestScripts.PurchaseTest"/>
+            <!--            <class name="TestScripts.wishListTest"/>-->
+            <!--            <class name="TestScripts.addressTest"/>-->
+        </classes>
+    </test>
+    <test name="GroupExecution">
+    </test>
+</suite>

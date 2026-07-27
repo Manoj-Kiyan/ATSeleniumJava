@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class cartTest extends BaseClass {
 
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"Smoke","Functional"})
     public void addToCartTest() throws Exception {
 
         driver.findElement(By.linkText("14.1-inch Laptop")).click();
@@ -17,7 +17,7 @@ public class cartTest extends BaseClass {
         Reporter.log("PRODUCT ADDED TO CART SUCCESSFULLY . . .",true);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,groups = {"Smoke","Functional"})
     public void updateProductCountTest() throws InterruptedException {
         driver.findElement(By.linkText("14.1-inch Laptop")).click();
         driver.findElement(By.id("add-to-cart-button-31")).click();
@@ -31,7 +31,7 @@ public class cartTest extends BaseClass {
         Reporter.log("PRODUCT UPDATED FROM CART SUCCESSFULLY . . .",true);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3,groups = {"Smoke","Functional"})
     public void removeFromCartTest() throws InterruptedException {
         driver.findElement(By.linkText("14.1-inch Laptop")).click();
         driver.findElement(By.id("add-to-cart-button-31")).click();
