@@ -26,7 +26,7 @@ public class ScreenShot_Webpage {
             //        cd.getScreenshotAs();
         TakesScreenshot ts = (TakesScreenshot) driver;  //Type Cast
         File screenshot = ts.getScreenshotAs(OutputType.FILE);
-        File saveDir = new File("src/main/java/TakesScreenShot_Interface/screenshots");
+        File saveDir = new File("src/test/java/TakesScreenShot_Interface/screenshots");
         if (!saveDir.exists()) {
             saveDir.mkdirs();  // create folder if missing
         }

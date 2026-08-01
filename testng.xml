@@ -8,7 +8,8 @@
         <parameter name="Password" value="mk2316@"></parameter>
         <parameter name="ConfirmPassword" value="mk2316@"></parameter>
         <classes>
-            <class name="TestNG.DataDrivenTestingFromXmlFile"/>
+            <class name="TestNG.extendReport"></class>
+<!--            <class name="TestNG.DataDrivenTestingFromXmlFile"/>-->
 
         </classes>
     </test>

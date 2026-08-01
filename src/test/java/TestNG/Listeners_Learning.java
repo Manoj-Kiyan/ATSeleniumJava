@@ -22,7 +22,7 @@ public class Listeners_Learning {
             driver.manage().window().maximize();
 
             driver.get(File_Utility.getProperty("url"));
-            Assert.assertEquals(driver.getTitle(),"Demnno Web Shop");
+            Assert.assertEquals(driver.getTitle(),"Demo Web Shop");
             driver.findElement(By.className("ico-login")).click();
 
             Assert.assertEquals(driver.getCurrentUrl().contains("login"),true);

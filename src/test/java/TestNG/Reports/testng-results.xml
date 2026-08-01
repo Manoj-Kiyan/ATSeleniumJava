@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-31T11:45:33 IST" name="MySuite" finished-at="2026-07-31T11:45:43 IST" duration-ms="10136">
+    <groups>
+    </groups>
+    <test started-at="2026-07-31T11:45:33 IST" name="AllTests" finished-at="2026-07-31T11:45:43 IST" duration-ms="10087">
+      <class name="TestNG.extendReport">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestNG.extendReport@393671df]" started-at="2026-07-31T11:45:33 IST" name="loginTest" finished-at="2026-07-31T11:45:43 IST" duration-ms="10053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demowebshop.tricentis.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Manoj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kiyan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mk@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mk2316@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mk2316@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- TestNG.extendReport -->
+    </test> <!-- AllTests -->
+    <test started-at="2026-07-31T11:45:43 IST" name="BatchExecution" finished-at="2026-07-31T11:45:43 IST" duration-ms="0">
+    </test> <!-- BatchExecution -->
+  </suite> <!-- MySuite -->
+</testng-results>
